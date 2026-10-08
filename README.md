@@ -21,13 +21,14 @@ README.md                 使用与协作说明
 
 ## 快速开始
 
-建议使用 Python 3.10 或更新版本。在本目录执行：
+推荐使用 Python 3.12；本仓库固定的 NumPy 版本要求 Python 至少为 3.11。本次实际验证使用 Python 3.12.14。在本目录执行：
 
 ```sh
 python -m venv .venv
 # Windows PowerShell: .\.venv\Scripts\Activate.ps1
 # macOS / Linux: source .venv/bin/activate
 python -m pip install -r requirements.txt
+python demo/check_environment.py
 python demo/make_samples.py
 python demo/line_detector.py --image assets/samples/right.png --output results/local/right
 python -m unittest discover -s tests -v
@@ -51,7 +52,7 @@ python -m unittest discover -s tests -v
 
 ### 遇到的问题与处理
 
-本地初始环境未安装 OpenCV，因此将验证依赖放在项目专用目录，保留已有运行环境，并记录实际运行版本。代码将结果保存为文件，避免 headless 版本不提供窗口显示功能的问题。远程认证与推送若尚未完成，会在操作记录中明确说明，不将本地提交表述为已经上传。
+本地初始环境未安装 OpenCV，因此将验证依赖放在项目专用目录，保留已有运行环境，并记录实际运行版本。检查依赖元数据时发现，固定的 NumPy 2.3.5 要求 Python 至少为 3.11，因此修正了原先过宽的 Python 版本建议，并补充课前环境检查程序。代码将结果保存为文件，避免 headless 版本不提供窗口显示功能的问题。远程认证与推送若尚未完成，会在操作记录中明确说明，不将本地提交表述为已经上传。
 
 ### 多人维护建议
 
