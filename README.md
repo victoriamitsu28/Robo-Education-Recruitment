@@ -44,15 +44,19 @@ python -m unittest discover -s tests -v
 
 本次验证使用合成教学图片，没有将其描述为真实摄像头数据或实车效果。课程中的左右方向依赖图像未镜像且与车体方向一致。当前程序只输出位置和方向建议，不控制电机，也未完成真实环境鲁棒性验证。
 
+资料已整理至本公开仓库，完成远程创建、clone、add、commit 与 push，并通过 [Pull Request #1](https://github.com/victoriamitsu28/Robo-Education-Recruitment/pull/1) 合并了课前环境检查改进。实际操作与提交记录见 [results/git-workflow.md](results/git-workflow.md)。
+
 ## 4.5.3 Git 与 GitHub 操作说明
 
 ### 使用的功能
 
-本地使用 Git 跟踪课程资料，将内训方案与课件整理为具有实际内容的不同提交。远程仓库创建、clone 与 push 的实际完成情况，以 `results/git-workflow.md` 的操作记录为准。
+使用 Git 跟踪课程资料，将内训方案、课件与代码、环境检查改进分别提交；完成 GitHub 远程仓库创建、clone、add、commit、push、分支与 Pull Request 合并。提交历史保留了实际内容的变化，未将全部材料压成一次提交。操作记录见 `results/git-workflow.md`。
 
 ### 遇到的问题与处理
 
-本地初始环境未安装 OpenCV，因此将验证依赖放在项目专用目录，保留已有运行环境，并记录实际运行版本。检查依赖元数据时发现，固定的 NumPy 2.3.5 要求 Python 至少为 3.11，因此修正了原先过宽的 Python 版本建议，并补充课前环境检查程序。代码将结果保存为文件，避免 headless 版本不提供窗口显示功能的问题。远程认证与推送若尚未完成，会在操作记录中明确说明，不将本地提交表述为已经上传。
+本地初始环境未安装 OpenCV，因此将验证依赖放在项目专用目录，保留已有运行环境，并记录实际运行版本。检查依赖元数据时发现，固定的 NumPy 2.3.5 要求 Python 至少为 3.11，因此修正了原先过宽的 Python 版本建议，并补充课前环境检查程序。代码将结果保存为文件，避免 headless 版本不提供窗口显示功能的问题。
+
+Git 认证最初在非交互模式下没有输出，改用交互终端完成设备授权。随后 Git 的 HTTPS 连接停滞，而系统网络请求正常；检查发现 Git 没有自动采用 Windows 的现有代理，为本次 Git 命令指定该代理后完成 clone 和 push，没有改变全局代理设置。认证信息未写入仓库。
 
 ### 多人维护建议
 
