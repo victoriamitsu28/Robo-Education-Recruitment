@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "python_minimum": "3.11",
+  "numpy": {
+    "package_version": "2.3.5",
+    "module_version": "2.3.5"
+  },
+  "opencv-python-headless": {
+    "package_version": "5.0.0.93",
+    "module_version": "5.0.0"
+  },
+  "ready": true,
+  "problems": []
+}
