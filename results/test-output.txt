@@ -1,0 +1,15 @@
+test_center (test_line_detector.LineDetectorTests.test_center) ... ok
+test_invalid_inputs (test_line_detector.LineDetectorTests.test_invalid_inputs) ... ok
+test_large_shadow (test_line_detector.LineDetectorTests.test_large_shadow) ... ok
+test_left (test_line_detector.LineDetectorTests.test_left) ... ok
+test_missing_line_has_no_numeric_error (test_line_detector.LineDetectorTests.test_missing_line_has_no_numeric_error) ... ok
+test_multiple_lines (test_line_detector.LineDetectorTests.test_multiple_lines) ... ok
+test_right (test_line_detector.LineDetectorTests.test_right) ... ok
+test_roi_excludes_upper_object (test_line_detector.LineDetectorTests.test_roi_excludes_upper_object) ... ok
+test_small_noise_is_ignored (test_line_detector.LineDetectorTests.test_small_noise_is_ignored) ... ok
+test_threshold_experiment (test_line_detector.LineDetectorTests.test_threshold_experiment) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK

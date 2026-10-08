@@ -1,0 +1,9 @@
+﻿image,threshold,status,error,center_x,roi_y,candidates,reason,direction
+left.png,100,ok,-0.5,79.5,144,1,single plausible region,LEFT
+center.png,100,ok,0.0,159.5,144,1,single plausible region,STRAIGHT
+right.png,100,ok,0.5,239.5,144,1,single plausible region,RIGHT
+no_line.png,100,no_line,,,144,0,no significant foreground,STOP
+two_lines.png,100,ambiguous,,,144,2,multiple significant regions,STOP
+shadow.png,100,ambiguous,,,144,2,multiple significant regions,STOP
+dark_background.png,80,ok,0.0,159.5,144,1,single plausible region,STRAIGHT
+dark_background.png,160,ambiguous,,,144,1,region fails area or width check,STOP

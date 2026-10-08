@@ -1,0 +1,8 @@
+{
+  "python": "3.12.14",
+  "opencv": "5.0.0",
+  "numpy": "2.3.5",
+  "opencv_package": "5.0.0.93",
+  "tests_passed": 10,
+  "data": "synthetic teaching fixtures; no real camera or robot test"
+}
